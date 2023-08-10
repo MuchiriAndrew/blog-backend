@@ -46,6 +46,6 @@ class OthersController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def other_params
-      params.require(:other).permit(:title, :content, :timestamp)
+      params.require(:other).permit(:title, :content, :timestamp, :source)
     end
 end
